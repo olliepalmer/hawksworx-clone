@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Hold the Space. Conversations with creative practitioners who teach.",
   "scripts": {
+    "start": "node --experimental-worker ./src/main.js",
     "start": "gulp build & gulp watch & ELEVENTY_ENV=dev eleventy --serve & yarn run start:lambda",
     "prime": "gulp build & ELEVENTY_ENV=prime eleventy",
     "build": "gulp build & ELEVENTY_ENV=prod eleventy && yarn run build:lambda",
@@ -10,6 +11,7 @@
     "build:lambda": "netlify-lambda build src/lambda",
     "start:lambda": "netlify-lambda serve src/lambda",
     "new:link": "node utils/new.js link"
+}
   },
   "repository": {
     "type": "git",
