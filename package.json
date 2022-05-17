@@ -1,7 +1,7 @@
 {
   "name": "holdthespace.art",
   "version": "0.0.1",
-  "description": "Hold the Space. Conversations with creative practitioners who teach.",
+  "description": "Hold the Space - conversations with creative practitioners who teach",
   "scripts": {
     "start": "gulp build & gulp watch & ELEVENTY_ENV=dev eleventy --serve & yarn run start:lambda",
     "prime": "gulp build & ELEVENTY_ENV=prime eleventy",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/olliepalmer/hawksworx-clone"
+    "url": "https://github.com/olliepalmer/holdthespace"
   },
   "author": "Ollie Palmer",
   "license": "ISC",
@@ -30,7 +30,8 @@
     "gulp-uglify": "^3.0.1",
     "netlify-lambda": "^1.1.0",
     "twitter": "^1.7.1"
-  },
+  }
+  ,
   "devDependencies": {
     "sass": "^1.51.0"
   }
