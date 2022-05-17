@@ -1,9 +1,10 @@
 @import '_themes';
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+
 @font-face {
-  font-family: Placard;
-  src: url('/fonts/placardmtstd-cond-webfont.woff2') format('woff2'),
-       url('/fonts/placardmtstd-cond-webfont.woff') format('woff');
+  font-family: 'Inter', sans-serif;
   font-display: swap;
 }
 
@@ -20,8 +21,8 @@ html, body {
 }
 
 ul.nav {
-  font-family: Arial, sans-serif;
-  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
   font-size: 0.9em;
   list-style: none;
   margin:0 0 5em 0;
@@ -43,7 +44,7 @@ ul.nav {
 }
 
 h1 {
-  font-family: Placard, arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 4em;
   line-height: 1;
   text-transform: uppercase;
@@ -90,5 +91,3 @@ html.dark-theme {
     color: #fff;
   }
 }
-
-

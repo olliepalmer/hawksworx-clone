@@ -3,10 +3,11 @@
 @import '_syntax';
 @import '_themes';
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+
 @font-face {
-  font-family: Placard;
-  src: url('/fonts/placardmtstd-cond-webfont.woff2') format('woff2'),
-       url('/fonts/placardmtstd-cond-webfont.woff') format('woff');
+  font-family: 'Inter', sans-serif;
   font-display: swap;
 }
 
@@ -14,12 +15,13 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
   text-align: center;
   color: #444;
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-weight: normal;
   line-height: 28px;
   font-size: 14px;
@@ -91,6 +93,7 @@ body {
   }
   @include bp(wide) {
     max-width: 100%;
+    text-align: right;
   }
 }
 
@@ -129,10 +132,10 @@ h1, h2, h3, h4 {
   line-height: 1.2;
 }
 h1 {
-  font-family: Placard, arial, sans-serif;
-  font-size: 3.8em;
+  font-family: Inter, arial, sans-serif;
+  font-size: 2em;
   line-height: 1;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: normal;
   margin-top:0;
   margin-bottom:0;
@@ -149,9 +152,6 @@ h4 { font-size: 1.1em; }
 
 .avatar-large {
   width: 120px;
-  border-radius: 4px;
-  border:solid 2px #fff;
-  box-shadow: #000 0 0 4px;
 }
 
 .main {
@@ -167,8 +167,8 @@ h4 { font-size: 1.1em; }
 }
 
 .excerpt {
-  font-style: italic;
-  font-size: 1.1em;
+  font-style: normal;
+  font-size: 1.4em;
 }
 
 blockquote {
@@ -252,7 +252,8 @@ img.flag {
 }
 
 a.more-link {
-  background-color: #eee;
+  color: $light;
+  background-color: $red;
   display:inline-block;
 }
 
@@ -286,6 +287,7 @@ header {
     list-style: none;
     margin:0;
     padding:0;
+    text-align: center;
     li {
       display: inline;
     }
@@ -409,28 +411,29 @@ footer {
  base colours
 */
 html {
-  background-color: mix(#333, #fff, 20%);
+  background-color: $white;
 }
 a {
-  border-bottom-color: #9bf;
+  border-bottom-color: $red;
   &:link,
   &:visited {
-    color: #46c;
+    color: $red;
   }
   &:hover,
   &:focus {
-    color: #2755de;
-    border-bottom-color: #2755de;
+    color: $white;
+    background-color: $red;
+    border-bottom-color: $white;
   }
 }
 blockquote {
-  border-left-color: mix(#333, #fff, 10%);
+  border-left-color: $red;
 }
 .solid-footer {
   color: mix(#333, #fff, 40%);
   background-color: #333;
   @include bp(wide) {
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0,0,0,0);
   }
   a {
     color: #fff;
@@ -480,4 +483,52 @@ a.floating-lozenge {
       box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.45);
     }
   }
+}
+
+// rotating logo
+
+:root {
+  --time: 60s;
+}
+
+.logo {
+  width: 80%;
+  height: 300px;
+  display: block;
+  margin: auto;
+  @include bp(wide) {
+    width: 80%;
+    height: 200px;
+  }
+}
+
+.logo svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+svg .dottedsquare,
+svg .letters {
+  fill: #fafafa;
+}
+
+svg .dottedsquare {
+  -webkit-animation: spin var(--time) linear infinite;
+  -moz-animation: spin var(--time) linear infinite;
+  animation: spin var(--time) linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.subhead {
+  text-align: center;
 }

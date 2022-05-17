@@ -4,26 +4,36 @@
   themes
 */
 
+$white: #fafafa;
+$red: #eb5550;
+$green: #6ee6e6;
+$green-dk: #003c54;
+$grey-mid: #878787;
+$grey-dk: #2d2d2d;
+
 // dark themes (where text in the side bar should be light)
 // root colour specified as rgb triple so that it can me manipulated without preprocessing
-.theme-ruby { --theme-base: 158, 48, 40; }
-.theme-black { --theme-base:34, 34, 34; }
-.theme-red { --theme-base:175, 42, 64; }
-.theme-blue { --theme-base:59, 88, 162; }
+.theme-red {    --theme-base: 235, 85, 80; }
+.theme-grey { --theme-base:  135, 135, 135; }
+.theme-black {  --theme-base: 45,  45, 45; }
+.theme-seagreen { --theme-base: 0, 60, 84; }
+.theme-lightgreen { --theme-base:110, 230, 230; }
+
+
+// not really in use
+.theme-ruby {   --theme-base: 158, 48, 40; }
+.theme-blue {   --theme-base: 59, 88, 162; }
 .theme-brightblue { --theme-base:36, 107, 189; }
 .theme-darkblue { --theme-base:62, 78, 117; }
 .theme-greyblue { --theme-base:50, 61, 62; }
-.theme-lime { --theme-base:123, 137, 45; }
-.theme-seagreen { --theme-base:87, 134, 113; }
-.theme-sepia { --theme-base:86, 80, 67; }
+.theme-lime {     --theme-base:123, 137, 45; }
+.theme-sepia {    --theme-base:86, 80, 67; }
 .theme-steelblue { --theme-base: 91, 117, 137; }
-.theme-teal { --theme-base: 48, 165, 156; }
-.theme-khaki { --theme-base: 179, 175, 112; }
-
-
+.theme-teal {     --theme-base: 48, 165, 156; }
+.theme-khaki {    --theme-base: 179, 175, 112; }
 // bright themes (where text in the side bar should be dark)
 // root colour specified as rgb triple so that it can me manipulated without preprocessing
-.theme-neonblue {--theme-base: 30, 235, 250; }
+.theme-neonblue {  --theme-base: 110,230,230; }
 .theme-neongreen { --theme-base: 173, 247, 0; }
 .theme-nearwhite { --theme-base: 245, 245, 245; }
 
@@ -90,8 +100,3 @@
   }
 
 }
-
-
-
-
-
