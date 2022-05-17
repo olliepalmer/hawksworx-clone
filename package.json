@@ -10,7 +10,6 @@
     "build:lambda": "netlify-lambda build src/lambda",
     "start:lambda": "netlify-lambda serve src/lambda",
     "new:link": "node utils/new.js link"
-}
   },
   "repository": {
     "type": "git",
@@ -29,10 +28,7 @@
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.1",
     "netlify-lambda": "^1.1.0",
+    "sass": "^1.51.0",
     "twitter": "^1.7.1"
-  }
-  ,
-  "devDependencies": {
-    "sass": "^1.51.0"
   }
 }
