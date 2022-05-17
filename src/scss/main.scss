@@ -214,7 +214,7 @@ button {
   cursor: pointer;
   font-size: 1em;
   background-color: $red;
-  color: $white;
+  color: $white !important;
   // font-family: Georgia, serif;
   border-style: none;
   padding: 0.5em 1em;
@@ -414,14 +414,14 @@ html {
   background-color: $white;
 }
 a {
-  border-bottom-color: #0f0;
+  border-bottom-color: $red;
   &:link,
   &:visited {
-    color: #ff0000;
+    color: $red;
   }
   &:hover,
   &:focus {
-    color: $white;
+    color: $white !important;
     background-color: $red;
     border-bottom-color: $white;
   }
