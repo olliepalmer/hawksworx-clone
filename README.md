@@ -1,6 +1,6 @@
-# hawksworx.com
+# Hold the Space
 
-Phil Hawksworth's blog.  Served up at [https://www.hawksworx.com](https://www.hawksworx.com) and hosted on [Netlify](http://www.netlify.com)
+Demo layout for the yet-to-be-build Hold the Space website. Adapted from Phil Hawksworth's blog, [https://www.hawksworx.com](https://www.hawksworx.com) and hosted on [Netlify](http://www.netlify.com).
 
 
 ## Overview
@@ -45,6 +45,3 @@ My preferred method is to host on [Netlify](http://www.netlify.com) which can ru
 
 ## Clone and deploy your own
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/hawksworx.com)
-
-
-
