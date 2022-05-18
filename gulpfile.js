@@ -1,4 +1,3 @@
-
 const gulp      = require("gulp");
 const sass      = require('gulp-sass')(require('sass'));
 const uglify    = require('gulp-uglify');
@@ -34,7 +33,7 @@ gulp.task('js', function() {
 /*
   Watch folders for changess
 */
-gulp.task("watch", function() {
+gulp.task('watch', function() {
   gulp.watch('./src/scss/**/*.scss', gulp.parallel('css'));
   gulp.watch('./src/js/**/*.js', gulp.parallel('js'));
 });
@@ -43,7 +42,4 @@ gulp.task("watch", function() {
 /*
   Let's build this sucker.
 */
-gulp.task('build', gulp.parallel(
-  'css',
-  'js'
-));
+gulp.task('build', gulp.series('css','js'));

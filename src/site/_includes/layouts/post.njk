@@ -1,7 +1,5 @@
-
 {% extends 'layouts/base.njk' %}
 {% set section = 'blog' %}
-
 
 {% block sidebar %}
   <p class="by-line">{{ date | dateDisplay }}<!-- by <a href="/about">Ollie Palmer</a>--></p>
@@ -17,8 +15,6 @@
     <li><a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a></li>
   {% endfor -%}
   </ul>
-
-  {{ content | toc | safe }}
 
 {% endblock %}
 

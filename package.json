@@ -30,6 +30,7 @@
     "markdown-it-anchor": "^8.6.4",
     "netlify-lambda": "^1.1.0",
     "sass": "^1.51.0",
+    "string": "^3.3.3",
     "twitter": "^1.7.1"
   },
   "devDependencies": {
