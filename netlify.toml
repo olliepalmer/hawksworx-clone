@@ -1,6 +1,7 @@
 [build]
-  command = "yarn run build"
+  command = "yarn run build & yarn run export"
   functions = "functions"
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "14"

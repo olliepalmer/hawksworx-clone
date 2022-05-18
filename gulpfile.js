@@ -1,4 +1,4 @@
-const gulp      = require("gulp");
+const gulp      = require('gulp');
 const sass      = require('gulp-sass')(require('sass'));
 const uglify    = require('gulp-uglify');
 const concat    = require('gulp-concat');
@@ -23,7 +23,7 @@ gulp.task('css', function() {
  Use pump to expose errors more usefully.
 */
 gulp.task('js', function() {
-  return gulp.src("./src/js/**/*.js")
+  return gulp.src('./src/js/**/*.js')
     .pipe(concat('hawksworx.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./src/site/_includes/js'));
