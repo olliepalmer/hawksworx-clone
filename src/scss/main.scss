@@ -527,6 +527,12 @@ svg .dottedsquare {
   animation: spin var(--time) linear infinite;
 }
 
+svg.dottedsquare:hover {
+  -webkit-animation: spinbackwards var(--time) linear infinite;
+  -moz-animation: spinbackwards var(--time) linear infinite;
+  animation: spinbackwards var(--time) linear infinite;
+}
+
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -535,6 +541,17 @@ svg .dottedsquare {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+
+@keyframes spinbackwards {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 

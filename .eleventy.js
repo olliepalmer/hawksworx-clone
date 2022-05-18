@@ -12,6 +12,19 @@ module.exports = function(eleventyConfig) {
   const pluginRss = require("@11ty/eleventy-plugin-rss");
   eleventyConfig.addPlugin(pluginRss);
 
+  // table of contents plugin
+  const eleventyPluginTOC = require( '@thedigitalman/eleventy-plugin-toc-a11y' );
+  const markdownIt = require( 'markdown-it' );
+  const markdownItAnchor = require( 'markdown-it-anchor' );
+  module.exports = function ( eleventyConfig ) {
+  // Plugins
+    eleventyConfig.addPlugin( eleventyPluginTOC );
+    // Markdown settings
+    eleventyConfig.setLibrary( 'md',
+      markdownIt().use( markdownItAnchor )
+    );
+  }
+
 // add podcast tag + shortcode
 // eleventyConfig.addShortcode("podcast", (podcastURL, title) => {
 //   const url = new URL(podcastURL);

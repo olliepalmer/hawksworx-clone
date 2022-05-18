@@ -18,7 +18,7 @@
   "author": "Ollie Palmer",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "0.11.0",
+    "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
     "axios": "^0.18.1",
@@ -27,6 +27,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.1",
+    "markdown-it-anchor": "^8.6.4",
     "netlify-lambda": "^1.1.0",
     "sass": "^1.51.0",
     "twitter": "^1.7.1"
