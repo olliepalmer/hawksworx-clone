@@ -12,6 +12,15 @@ module.exports = function(eleventyConfig) {
   const pluginRss = require("@11ty/eleventy-plugin-rss");
   eleventyConfig.addPlugin(pluginRss);
 
+// add podcast tag + shortcode
+// eleventyConfig.addShortcode("podcast", (podcastURL, title) => {
+//   const url = new URL(podcastURL);
+//   const id = url.searchParams.get("v");
+//   return `
+//   <iframe src='https://share.transistor.fm/e/${id}/dark' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>
+//   `;
+// });
+
 
   // Add filters to Nunjucks
   eleventyConfig.addFilter("dateDisplay", require("./src/site/_filters/dates.js") );

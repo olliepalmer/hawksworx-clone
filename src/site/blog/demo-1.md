@@ -3,27 +3,23 @@ title: 001 Alpha Bravo
 description: Magna leo est pellentesque eget facilisi nascetur habitant feugiat per quisque justo vitae duis id.
 date: 2022-06-01
 allowcomments: false
-tags: ["designer", "entrepreneur", "teacher"]
+tags: ["artist", "designer", "author", "teacher"]
 photoCredits:
   - name: "Alpha Bravo"
     url: "https://google.com"
 pageClass: "dark-theme theme-black"
+podcast: "1493e91f"
+image:
+  - src: "/images/cesar-harada.png"
+    alt: "Cesar Harada, underwater, behind graphics reading 'Hold the Space'"
 ---
 
 Ac etiam purus rutrum efficitur lectus sed donec urna tincidunt duis posuere ex placerat velit cursus nec feugiat non pellentesque cubilia habitant senectus integer litora elementum primis eu per tempus malesuada maecenas nullam arcu dui nisl tortor vitae aliquam curae iaculis felis curabitur fames nibh a ante eros sagittis vestibulum
 
 <!--more-->
 
-![Searching](/images/cesar-harada.png "Cesar Harada")
-
-
-Ac etiam purus rutrum efficitur lectus sed donec urna tincidunt duis posuere ex placerat velit cursus nec feugiat non pellentesque cubilia habitant senectus integer litora elementum primis eu per tempus malesuada maecenas nullam arcu dui nisl tortor vitae aliquam curae iaculis felis curabitur fames nibh a ante eros sagittis vestibulum
 
 <hr>
-
-## Listen
-
-<iframe width="100%" height="180" frameborder="no" scrolling="no" seamless src="https://share.transistor.fm/e/ef518eff"></iframe>
 
 ## Transcript
 

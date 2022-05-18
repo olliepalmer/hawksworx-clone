@@ -63,6 +63,7 @@ body {
     max-width: 700px;
   }
   @include bp(wide) {
+    text-align: left;
     width: 60%;
     max-width: 600px;
   }
@@ -75,8 +76,10 @@ body {
   }
 }
 .sidebar-container {
+  text-align: center;
   @include bp(wide) {
     margin-right: 3em;
+    text-align: right;
   }
 }
 
@@ -85,10 +88,10 @@ body {
   margin-top: 5em;
   padding-bottom: 5em;
   @include bp(narrow) {
-    max-width: 80%;
+    max-width: 100%;
   }
   @include bp(mid) {
-    max-width: 450px;
+    max-width: 100%;
   }
   @include bp(wide) {
     max-width: 100%;
@@ -114,6 +117,7 @@ ul.tags {
   font-size: 0.9em;
 
   li {
+    display: inline;
     line-height: 1.5;
   }
 }
@@ -279,7 +283,10 @@ h2 img.external-link {
 
 // Header
 header {
-
+  text-align: center;
+  @include bp(wide){
+    text-align: right;
+  }
   ul.nav {
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -288,6 +295,9 @@ header {
     margin:0;
     padding:0;
     text-align: center;
+    @include bp(wide){
+      text-align: right;
+    }
     li {
       display: inline;
     }
@@ -344,21 +354,20 @@ footer {
     font-size: 0.7em;
     line-height: 1.5;
     padding: 3em 0;
+    background: $red;
   }
 
 
   @include bp(wide) {
-    position: fixed;
-    width: 45%;
-    bottom: 0;
-    left: 0;
-
+    position: flex;
+    width: 100%;
+    background: $red;
   }
   .container {
     padding: 0;
     @include bp(wide) {
-      margin-right: 3rem;
-      margin-left: auto;
+      margin-left: 3rem;
+      margin-right: auto;
     }
   }
 }
@@ -431,9 +440,8 @@ blockquote {
 }
 .solid-footer {
   color: mix(#333, #fff, 40%);
-  background-color: #333;
   @include bp(wide) {
-    background-color: rgba(0,0,0,0);
+    background-color: $red;
   }
   a {
     color: #fff;
@@ -463,7 +471,7 @@ form {
     background-color: #fff;
   }
   ul.nav {
-    a:hover { background-color: rgba(255,255,255,.06); }
+    a:hover { background-color: $red; }
     a.home:hover { background-color: #fff; }
   }
 }
@@ -499,6 +507,7 @@ a.floating-lozenge {
   @include bp(wide) {
     width: 80%;
     height: 200px;
+    margin-right: 0;
   }
 }
 

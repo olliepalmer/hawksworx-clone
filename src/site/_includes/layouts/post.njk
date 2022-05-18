@@ -5,7 +5,13 @@
 
 {% block sidebar %}
   <p class="by-line">{{ date | dateDisplay }}<!-- by <a href="/about">Ollie Palmer</a>--></p>
+  {% if podcast %}
+  <iframe src='https://share.transistor.fm/e/{{ podcast }}/dark' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>
+  {% else %}
   <h1>{{ title | orphanWrap | safe }}</h1>
+  {% endif %}
+
+
   <ul class="tags">
   {% for tag in tags -%}
     <li><a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a></li>
@@ -15,6 +21,12 @@
 
 
 {% block content %}
+  {% if image %}
+    {% for item in image %}
+      <img src="{{ item.src }}" alt="{{ item.alt }}">
+    {% endfor %}
+  {% endif %}
+  
   <div class="excerpt">
     {{ content | section | orphanWrap | safe }}
   </div>
