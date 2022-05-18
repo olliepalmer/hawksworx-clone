@@ -5,7 +5,7 @@
   "scripts": {
     "start": "gulp build & gulp watch & ELEVENTY_ENV=dev eleventy --serve & yarn run start:lambda",
     "prime": "gulp build & ELEVENTY_ENV=prime eleventy",
-    "build": "gulp build & ELEVENTY_ENV=prod eleventy && yarn run build:lambda",
+    "build": "gulp build & ELEVENTY_ENV=prod eleventy & yarn run build:lambda",
     "dryrun": "gulp build & ELEVENTY_ENV=dev eleventy",
     "build:lambda": "netlify-lambda build src/lambda",
     "start:lambda": "netlify-lambda serve src/lambda",
@@ -18,7 +18,6 @@
   "author": "Ollie Palmer",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
     "axios": "^0.18.1",
@@ -28,12 +27,17 @@
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.1",
     "markdown-it-anchor": "^8.6.4",
-    "netlify-lambda": "^1.1.0",
+    "netlify-lambda": "^1.6.3",
     "sass": "^1.51.0",
     "string": "^3.3.3",
     "twitter": "^1.7.1"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
     "@thedigitalman/eleventy-plugin-toc-a11y": "^2.1.0"
+  },
+  "engines": {
+    "node": "^18.0.0",
+    "npm": "^8.8.0"
   }
 }
