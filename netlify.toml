@@ -1,5 +1,5 @@
 [build]
-  command = "yarn run build & yarn run export"
+  command = "npx @11ty/eleventy"
   functions = "functions"
   publish = "dist"
 
