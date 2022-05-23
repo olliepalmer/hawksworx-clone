@@ -8,6 +8,8 @@ pageClass: "dark-theme theme-black"
 image:
   - src: "/images/nelly-ben-hayoun.png"
     alt: "Nelly Ben Hayoun on Hold the Space"
+podcast: "1493e91f"
+
 
 ---
 
@@ -15,7 +17,6 @@ Ac etiam purus rutrum efficitur lectus sed donec urna tincidunt duis posuere ex 
 
 <!--more-->
 
-![Searching](/images/cesar-harada.png "Cesar Harada")
 
 
 Ac etiam purus rutrum efficitur lectus sed donec urna tincidunt duis posuere ex placerat velit cursus nec feugiat non pellentesque cubilia habitant senectus integer litora elementum primis eu per tempus malesuada maecenas nullam arcu dui nisl tortor vitae aliquam curae iaculis felis curabitur fames nibh a ante eros sagittis vestibulum

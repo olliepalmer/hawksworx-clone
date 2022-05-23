@@ -3,14 +3,15 @@ title: 002 Barbara Neves Alves
 description: Magna leo est pellentesque eget facilisi nascetur habitant feugiat per quisque justo vitae duis id.
 date: 2022-06-10
 allowcomments: false
-tags: ["designer", "entrepreneur", "teacher"]
+tags: ["designer", "writer", "teacher"]
 photoCredits:
-  - name: "Alpha Bravo"
-    url: "https://google.com"
+  - name: "Barbara Neves Alves"
+    url: "https://barbaranevesalves.com"
 pageClass: "dark-theme theme-black"
 image:
   - src: "/images/barbara-neves-alves.png"
     alt: "Barbara Neves Alves"
+podcast: "1493e91f"
 
 ---
 
