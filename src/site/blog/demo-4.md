@@ -1,16 +1,13 @@
 ---
-title: 002 Barbara Neves Alves
+title: 003 Cesar Harada
 description: Magna leo est pellentesque eget facilisi nascetur habitant feugiat per quisque justo vitae duis id.
 date: 2022-06-10
 allowcomments: false
-tags: ["designer", "entrepreneur", "teacher"]
-photoCredits:
-  - name: "Alpha Bravo"
-    url: "https://google.com"
+tags: ["designer", "entrepreneur", "teacher", "artist"]
 pageClass: "dark-theme theme-black"
 image:
-  - src: "/images/barbara-neves-alves.png"
-    alt: "Barbara Neves Alves"
+  - src: "/images/cesar-harada.png"
+    alt: "Cesar Harada"
 
 ---
 
