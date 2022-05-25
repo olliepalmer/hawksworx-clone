@@ -1,6 +1,6 @@
 # Hold the Space
 
-Demo layout for the yet-to-be-build Hold the Space website. Adapted from Phil Hawksworth's blog, [https://www.hawksworx.com](https://www.hawksworx.com) and hosted on [Netlify](http://www.netlify.com).
+Layout for the yet-to-be-launched Hold the Space website. Adapted from Phil Hawksworth's blog, [https://www.hawksworx.com](https://www.hawksworx.com) and hosted on [Netlify](http://www.netlify.com). At present (May 2022) the site just has demo content.
 
 
 ## Overview
@@ -21,10 +21,10 @@ To build the site you need:
 ```bash
 
 # clone this repository
-git clone git@github.com:philhawksworth/hawksworx.com.git
+git clone git@github.com:olliepalmer/holdthespace.git
 
 # go to the working directory
-cd hawksworx.com
+cd holdthespace
 
 # install dependencies
 yarn
@@ -36,12 +36,12 @@ yarn start
 
 ## Deployment
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/793e740d-7c84-4e39-b528-a34be81cd71e/deploy-status)](https://app.netlify.com/sites/hawksworx/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/637366aa-9df7-47ae-911b-a553d98cf89c/deploy-status)](https://app.netlify.com/sites/holdthespace/deploys)
 
-The build command `yarn run build` will generate a set of static assets in a `dist` folder which can be deployed to any web hosting service.
+The build command `npx @11ty/eleventy` will generate a set of static assets in a `dist` folder which can be deployed to any web hosting service. Note, this is where it differs from the original project! 
 
 My preferred method is to host on [Netlify](http://www.netlify.com) which can run this build process in a CI environment and then deploy the build to automatically to a global CDN. Such deployments are [triggered automatically](https://www.netlify.com/docs/continuous-deployment/) by every git push to the `master` branch of the origin repository.
 
 
 ## Clone and deploy your own
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/hawksworx.com)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/olliepalmer/holdthespace)
